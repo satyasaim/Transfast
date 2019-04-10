@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bgimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_marginTop="40dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <android.support.v7.widget.AppCompatEditText
+                       android:hint="Email or Username"
+                       android:textSize="18sp"
+                       android:paddingLeft="10dp"
+                       android:layout_marginTop="30dp"
+                       android:layout_gravity="center_horizontal"
+                       android:background="@drawable/shape_edittext"
+                       android:layout_width="300dp"
+                       android:layout_height="45dp" />
+
+                   <android.support.v7.widget.AppCompatEditText
+                       android:hint="Password"
+                       android:textSize="18sp"
+                       android:paddingLeft="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_gravity="center_horizontal"
+                       android:background="@drawable/shape_edittext"
+                       android:layout_width="300dp"
+                       android:layout_height="45dp" />
+                   <android.support.v7.widget.AppCompatButton
+                       android:id="@+id/but_login"
+                       android:text="LOGIN"
+                       android:layout_marginTop="10dp"
+                       android:layout_gravity="center_horizontal"
+                       android:textColor="@color/text"
+                       android:background="@drawable/shape_loginbut"
+                       android:layout_width="300dp"
+                       android:layout_height="45dp" />
+
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <android.support.v7.widget.AppCompatCheckBox
+                       android:text="Remember Me"
+                       android:textColor="@color/text"
+                       android:textSize="15dp"
+                       android:layout_marginLeft="3dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <android.support.v7.widget.AppCompatTextView
+                           android:text="Forgot?"
+                           android:textColor="@color/text"
+                           android:textSize="15dp"
+                           android:layout_marginTop="10dp"
+                           android:layout_marginLeft="70dp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+
+                   </RelativeLayout>
+
+
+
+
+               </LinearLayout>
+
+               <!--<LinearLayout-->
+                   <!--android:orientation="horizontal"-->
+                   <!--android:layout_width="match_parent"-->
+                   <!--android:layout_height="wrap_content">-->
+
+
+                   <!--<view-->
+                       <!--android:layout_marginTop="30dp"-->
+                       <!--android:background="@color/text"-->
+                       <!--android:layout_marginLeft="52dp"-->
+                       <!--android:layout_width="120dp"-->
+                       <!--android:layout_height="1dp"/>-->
+
+                   <!--<android.support.v7.widget.AppCompatTextView-->
+                       <!--android:text="or"-->
+                       <!--android:textSize="15dp"-->
+                       <!--android:layout_marginTop="20dp"-->
+                       <!--android:textColor="@color/text"-->
+                       <!--android:layout_width="wrap_content"-->
+                       <!--android:layout_height="wrap_content" />-->
+
+                   <!--<view-->
+                       <!--android:layout_marginTop="30dp"-->
+                       <!--android:background="@color/text"-->
+                       <!--android:layout_marginLeft="3dp"-->
+                       <!--android:layout_width="120dp"-->
+                       <!--android:layout_height="1dp"/>-->
+
+
+
+
+               <!--</LinearLayout>-->
+
+               <android.support.v7.widget.AppCompatTextView
+                   android:textSize="15dp"
+                   android:textColor="@color/text"
+                   android:layout_marginTop="10dp"
+                   android:text="Login with your facebook or google account"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <android.support.v7.widget.AppCompatButton
+                       android:text="F facebook"
+                       android:textSize="12dp"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginLeft="32dp"
+                       android:textColor="@color/text"
+                       android:background="@color/fbbg"
+                       android:layout_width="120dp"
+                       android:layout_height="wrap_content" />
+                   <android.support.v7.widget.AppCompatButton
+                       android:text="g+ google"
+                       android:textSize="12dp"
+                       android:layout_marginTop="20dp"
+                       android:layout_marginLeft="32dp"
+                       android:textColor="@color/text"
+                       android:background="@drawable/shape_google"
+                       android:layout_width="120dp"
+                       android:layout_height="wrap_content" />
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_marginTop="40dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+
+                   <android.support.v7.widget.AppCompatTextView
+                       android:text="No account with Transfast?"
+                       android:textColor="@color/text"
+                       android:textSize="18dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+
+                   <android.support.v7.widget.AppCompatTextView
+                       android:text="CreatNow"
+                       android:textSize="18dp"
+                       android:layout_marginLeft="5dp"
+                       android:textColor="@color/cerate"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+
+
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+
+
+
+
+
+       </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
