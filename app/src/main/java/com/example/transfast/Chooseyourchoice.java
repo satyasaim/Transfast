@@ -9,15 +9,15 @@ import android.widget.Button;
 
 public class Chooseyourchoice extends AppCompatActivity {
 
-    AppCompatButton but_wanttransport,but_needtoload;
+    Button but_wanttransport,but_needtoload;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chooseyourchoice);
 
-        but_wanttransport = (AppCompatButton) findViewById(R.id.but_wanttransport);
-        but_needtoload = (AppCompatButton) findViewById(R.id.but_needtoload);
+        but_wanttransport = (Button) findViewById(R.id.but_wanttransport);
+        but_needtoload = (Button) findViewById(R.id.but_needtoload);
 
         but_wanttransport.setOnClickListener(new View.OnClickListener() {
             @Override

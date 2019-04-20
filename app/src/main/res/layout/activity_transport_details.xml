@@ -44,7 +44,7 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:background="@color/inbg"
+                android:background="@drawable/inner_bg"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 

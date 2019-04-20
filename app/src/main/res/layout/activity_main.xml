@@ -1,58 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="620dp">
-        <android.support.v7.widget.AppCompatImageView
-            android:src="@drawable/logo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    </android.support.constraint.ConstraintLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
             <Button
                 android:id="@+id/but_signup_main"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/main_sign"
                 android:text="SIGNUP"
-                android:textSize="15dp"
-                android:textColor="@color/text"
-                android:background="@drawable/bgimg"
-                android:layout_alignParentBottom="true"
-                android:layout_width="205dp"
-                android:layout_height="70dp" />
+                android:textColor="@color/text" />
 
             <Button
                 android:id="@+id/but_signin_main"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@color/main_sign"
                 android:text="SIGNIN"
-                android:textSize="15dp"
-                android:textColor="@color/text"
-                android:background="@drawable/bgimg"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_width="205dp"
-                android:layout_height="70dp" />
-
-
-        </RelativeLayout>
+                android:textColor="@color/text" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
 
 
 
 
 
-    </LinearLayout>
-</LinearLayout>
+
+
+
